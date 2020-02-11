@@ -40,6 +40,13 @@ apt autoremove -y
 #解决数据库的问题
 #数据库的问题，仅仅限于8.0
 #https://www.cnblogs.com/mzxiaoze/p/10413399.html
+8.0以后版本系统
+mysql -u root -p
+回车
+alter user 'root'@'localhost' identified by 'root';
+或者（密码为root）
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+flush privileges;
 # 尝试moodle3.8的微信登陆 192.168.70.129
 访问平台。
 http://192.168.70.129/moodle/
